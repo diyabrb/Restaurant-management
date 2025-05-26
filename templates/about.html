@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block title%}About {% endblock %}
+{% block body %}
+<div class = "container-fluid bg-dark mt-5 p-3 text-center text-light fw-bold fs-3 fst-italic">
+     About US
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <img src ="{% static  'images/a8.jpg' %}" alt = "hospital" width="100%" >
+        </div>
+        
+    <div class="col-6">
+        <div style="font-family: font-family: 'Playfair Display', serif;">
+        <p>At ZEST, food is more than just a meal, it’s an experience.
+
+          Born out of a passion for fresh ingredients, bold flavors, and heartwarming hospitality, ZEST brings you a dining experience that’s vibrant, wholesome, and unforgettable. Whether you're here for a quick bite or a long-awaited dinner with loved ones, every dish is crafted with care and served with love.
+
+        From local favorites to globally inspired creations, our menu is a celebration of taste, curated to satisfy every craving. Our chefs believe in using only the freshest ingredients, handpicked daily, to bring out the natural zest in every recipe.
+
+        But ZEST isn’t just about food, it’s about people. Offer everything from the warm smiles that greet you at the door to the cozy ambiance that invites you to stay a little longer, everything we do is designed to make you feel right at home.
+
+        So come, discover the zest of life — one bite at a time.
+
+         </p>
+
+        <h4>ZEST – Where Freshness Meets Flavor.</h4>
+        </div>
+        </div>
+       
+    </div>
+    
+</div>
+     <br>
+{% endblock %}

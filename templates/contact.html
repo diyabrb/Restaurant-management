@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Contact{% endblock %}
+{% block body %}
+<div class = "container-fluid bg-dark mt-5 p-3 text-center text-light fw-bold fs-3 fst-italic">
+     Contact Us
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img src = "{% static 'images/po6.jpg'%}" alt ="" width ="100%">
+        </div>
+      
+        <div class="col-6">
+            <form action = "" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+            <button class = "btn btn-dark bg-dark form-control"  >
+                SUBMIT
+            </button>  
+            
+        </form>
+        <br>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

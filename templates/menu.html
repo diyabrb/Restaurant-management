@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}menu{% endblock %}
+{% block body %}
+<div class="container-fluid bg-dark mt-5 p-3 text-center text-light fw-bold fs-3 fst-italic">
+     Our Menu
+</div>
+<br>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+  {% for i in menu %}
+    <div class="card" style="width: 18rem; min-height: 410px; display: flex; flex-direction: column; justify-content: space-between;">
+      <img src="{{ i.f_image.url }}" class="card-img-top" alt="..." style="height: 200px">
+      <div class="card-body">
+        <h5 class="card-title text-capitalize">{{ i.f_name }}</h5>
+        <p class="card-text">{{ i.f_desc }}</p>
+        <p class="card-text fw-bold">{{ i.f_price }}</p>
+        <a href="#" class="btn btn-dark">ORDER NOW</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<br>
+{% endblock %}

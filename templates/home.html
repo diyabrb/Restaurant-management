@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<div id="carouselExample" class="carousel slide position-relative">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="{% static 'images/p1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="position-absolute top-0 start-0 p-4 text-white text-start">
+        <h1 style="font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.99);">
+          Welcome to ZEST Restaurant
+        </h1>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="{% static 'images/a13.jpg' %}" class="d-block w-100" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle p-4 text-white text-center">
+        <h1 style="font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+          'Where Freshness Meets Flavor'
+        </h1>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="{% static 'images/ac.jpg' %}" class="d-block w-100" alt="...">
+      <div class="position-absolute top-0 start-0 p-4 text-white text-start">
+    <h1 style="font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+      Savor Every Bite at ZEST!</h1>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% endblock %}
